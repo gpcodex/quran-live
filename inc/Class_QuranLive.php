@@ -8,7 +8,7 @@ class Render_Quran_Live{
 
 		if($sura != 9){
 		echo '<p id="audio_live_quran">
-				<audio controls id="au" autoplay="autoplay" style="display:block;" src="http://www.islamaudio.fr/verset/Shuraym/1/1.mp3" type="audio/mpeg">
+				<audio controls id="au" autoplay="autoplay" style="display:block;" src="//islamaudio.fr/verset/Shuraym/1/1.mp3" type="audio/mpeg">
 				 Your browser does not support this audio format.
 				</audio>
 			</p>';			
@@ -177,7 +177,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 		var a=document.getElementById("au");
 		if(sura == 9 || sura ==1){
-			document.getElementById("au").src="http://www.islamaudio.fr/verset/no.mp3";
+			document.getElementById("au").src="//islamaudio.fr/verset/no.mp3";
 			a.load();
 		}
 		
@@ -188,7 +188,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 		<?php
 		if($cheikh == null){$cheikh = get_option('quran_live_recitator');}
 		?>
-		document.getElementById("au").src="http://www.islamaudio.fr/verset/<?=$cheikh;?>/"+sura+"/"+c+".mp3";
+		document.getElementById("au").src="//islamaudio.fr/verset/<?=$cheikh;?>/"+sura+"/"+c+".mp3";
 		
 		a.load();
 

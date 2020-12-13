@@ -22,22 +22,21 @@
     // de l'objet nommé "root"
     $root = $dom->documentElement;
     $object->root = new stdClass();
- 
     // appel d'une fonction récursive qui traduit l'élément XML
     // et passe la main à ses enfants, en parcourant tout l'arbre XML.
-    getElement($root, $object->root);
- 
+    @getElement($root, $object->root);
+
     return $object;
   }
     function getElement($dom_element, $object_element) {
- 
+
     // récupération du nom de l'élément
     $object_element->name = $dom_element->nodeName;
- 
+
     // récupération de la valeur CDATA, 
     // en supprimant les espaces de formatage.
     $object_element->textValue = trim($dom_element->firstChild->nodeValue);
- 
+      
     // Récupération des attributs
     if ($dom_element->hasAttributes()) {
       $object_element->attributes = array();
@@ -58,6 +57,7 @@
           array_push($object_element->children, $child_object);
         }
       }
-    }
+    
+  }
   }
 ?>

@@ -6,7 +6,7 @@ Plugin Name: Quran live
 
 Description: Quran live Multilanguage translated into 29 languages.
 
-Version: 1.0
+Version: 1.0.2
 
 Author: Karim Bahmed
 

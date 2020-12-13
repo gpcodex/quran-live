@@ -4,8 +4,8 @@ Contributors: karim42
 Donate link: http://www.gp-codex.fr
 Tags: muslim, quran live, quran multilanguage, coran , coran en texte, quran text, quran translate, islam, muslim, audio verse, quran verse, coran verset, audio verset, full download
 Requires at least: 3.0.1
-Tested up to: 4.9.8
-Stable tag: 4.9.8
+Tested up to: 5.6
+Stable tag: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,3 +80,11 @@ plugin-> add new-> in "Search Plugins" tape: Quran Live Multilanguage
 = 1.0 =
 
 * initial plugin
+
+= 1.0.1 =
+
+* Fix some errors for last version wordpress
+
+= 1.0.2 =
+
+* Fix url for audio verse
